@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let savedLike = localStorage.getItem(`heroe_${i}`);
     if (savedLike != null) {
       likes = savedLike;
+      heroe.like_number = likes;
     } else {
       likes = heroe.like_number;
     }
